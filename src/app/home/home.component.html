@@ -1,0 +1,31 @@
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+  <div class="container-fluid py-5">
+    <div class="row">
+      <div *ngFor="let imageName of imageList;" class="col-md-3 ftco-animate fadeInUp ftco-animated">
+        <div
+          class="
+            project-wrap
+            img
+            d-flex
+            align-items-center
+            justify-content-center
+          "
+          style="background-image: url(assets/images/{{ imageName }})"
+        >
+          <a
+            href="assets/images/{{ imageName }}"
+            class="
+              icon
+              image-popup
+              d-flex
+              align-items-center
+              justify-content-center
+            "
+            ><span class="fa fa-search"></span
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
