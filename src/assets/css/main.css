@@ -2940,7 +2940,7 @@ img.mfp-img {
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
-    --myColor: #fd7e14;
+    --myColor: #007bff;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -5309,7 +5309,7 @@ h5,
 }
 
 .hero-wrap.hero-wrap-2 {
-    height: 200px;
+    height: 120px;
     position: relative;
     background-position: center center !important;
     background-color: var(--myColor);
@@ -5327,7 +5327,7 @@ h5,
 }
 
 .hero-wrap.hero-wrap-2 .slider-text {
-    height: 250px;
+    height: 170px;
 }
 
 .hero-wrap .slider-text {
@@ -5993,9 +5993,10 @@ textarea.form-control {
 .img,
 .blog-img,
 .user-img {
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: #FFFFFF;
 }
 
 .testimony-section {
@@ -6234,9 +6235,9 @@ textarea.form-control {
 }
 
 .image-popup {
-    cursor: -webkit-zoom-in;
+    /* cursor: -webkit-zoom-in;
     cursor: -moz-zoom-in;
-    cursor: zoom-in;
+    cursor: zoom-in; */
 }
 
 .mfp-with-zoom .mfp-container,

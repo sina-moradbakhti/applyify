@@ -15,7 +15,7 @@
               justify-content-center
             "
           >
-            <img src="{{ catItem.image }}" />
+            <img class="flag" src="{{ catItem.flag }}" />
             <div
               class="
                 image-popup
@@ -23,7 +23,9 @@
                 align-items-center
                 justify-content-center
               "
-            ></div>
+            >
+              <img class="cover" src="{{ catItem.image }}" />
+            </div>
             <div class="info">
               <h4>{{ catItem.title }}</h4>
             </div>
