@@ -2,10 +2,10 @@
   <div class="container py-5" style="direction: rtl;">
     <div class="row">
       <div
-        *ngFor="let catItem of categories"
+        *ngFor="let catItem of selectedChildren"
         class="col-md-3 ftco-animate fadeInUp ftco-animated"
       >
-        <a [routerLink]="['/category/', catItem.code]">
+        <a [routerLink]="['/category/',catItem.code]">
           <div
             class="
               project-wrap
@@ -15,7 +15,7 @@
               justify-content-center
             "
           >
-            <img src="{{ catItem.image }}" />
+          <img src="{{ catItem.image }}" />
             <div
               class="
                 image-popup

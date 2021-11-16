@@ -2430,7 +2430,6 @@
     float: right;
     -webkit-backface-visibility: hidden;
     -webkit-touch-callout: none;
-    background-color: red;
 }
 
 .owl-carousel .owl-item img {
@@ -5310,9 +5309,10 @@ h5,
 }
 
 .hero-wrap.hero-wrap-2 {
-    height: 400px;
+    height: 200px;
     position: relative;
     background-position: center center !important;
+    background-color: var(--myColor);
 }
 
 .hero-wrap.hero-wrap-2 .overlay {
@@ -5327,7 +5327,7 @@ h5,
 }
 
 .hero-wrap.hero-wrap-2 .slider-text {
-    height: 400px;
+    height: 250px;
 }
 
 .hero-wrap .slider-text {
