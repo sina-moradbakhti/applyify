@@ -2940,7 +2940,7 @@ img.mfp-img {
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
-    --myColor: #007bff;
+    --myColor: #0066d3;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -5222,6 +5222,7 @@ h5,
 
 .ftco-navbar-light .navbar-nav>.nav-item.active a {
     color: var(--myColor);
+    font-weight: bold;
     position: relative;
 }
 
@@ -5507,10 +5508,13 @@ h5,
 
 .services .media-body p {
     margin-bottom: 0;
+    letter-spacing: 0;
+    font-size: 11.5px;
 }
 
 .services.services-4 h3 {
-    font-size: 22px;
+    font-size: 16px;
+    letter-spacing: 0;
 }
 
 .services-3 {
