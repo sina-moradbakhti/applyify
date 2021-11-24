@@ -99,9 +99,7 @@ export class ServicesComponent implements OnInit {
         name: 'کاریابی بین المللی',
         caption: 'از نوشتن رزومه انگلیسی با نگارش صحیح و حرفه ای تا پیدا کردن جاب آفر برای شما',
         image: '025-satchel.png'
-      },
-
-
+      }
     ];
   }
 

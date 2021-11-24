@@ -80,3 +80,35 @@
         filter: grayscale(0);
     }
 }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+mat-tab-group {
+    .mat-tab-label-container {
+        .mat-tab-label {
+            font-family: "IranSans";
+            min-width: 50px;
+            font-size: 13.5px;
+        }
+    }
+}
+
+.mat-form-field-infix {
+    .mat-form-field-label-wrapper {
+        direction: rtl;
+    }
+}
+
+mat-form-field {
+    .mat-form-field-wrapper {
+        //padding-bottom: 10px !important;
+    }
+}
