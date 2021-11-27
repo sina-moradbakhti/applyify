@@ -4,6 +4,16 @@
     cursor: pointer;
 }
 
+.smooth-text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.rtl {
+    direction: rtl;
+    text-align: right;
+}
+
 .navbar-brand {
     display: flex !important;
     flex-wrap: nowrap;
@@ -21,14 +31,14 @@
         padding-right: 10px;
         text-align: right;
         h1 {
-            font-size: 20px;
+            font-size: var(--font-size-large);
             font-weight: bold;
             letter-spacing: 0;
             padding-bottom: 0;
             padding-top: 0;
         }
         h3 {
-            font-size: 13.5px;
+            font-size: var(--font-size-regular);
             font-weight: 100;
             letter-spacing: 0;
             padding-bottom: 5px;
@@ -96,7 +106,7 @@ mat-tab-group {
         .mat-tab-label {
             font-family: "IranSans";
             min-width: 50px;
-            font-size: 13.5px;
+            font-size: var(--font-size-regular);
         }
     }
 }
@@ -110,5 +120,16 @@ mat-tab-group {
 mat-form-field {
     .mat-form-field-wrapper {
         //padding-bottom: 10px !important;
+    }
+}
+
+.sidebar-box {
+    .categories {
+        li {
+            a.active {
+                color: var(--myColor);
+                font-weight: 600;
+            }
+        }
     }
 }

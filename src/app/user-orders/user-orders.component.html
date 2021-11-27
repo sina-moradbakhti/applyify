@@ -1,0 +1,50 @@
+<section class="ftco-section">
+  <div class="container">
+    <div class="row rtl">
+      <div
+        class="col-lg-3 sidebar ftco-animate fadeInUp ftco-animated pl-md-4 rtl"
+      >
+        <div class="sidebar-box ftco-animate fadeInUp ftco-animated">
+          <app-user-dashboard-sidebar></app-user-dashboard-sidebar>
+        </div>
+      </div>
+
+      <div class="col-lg-9 ftco-animate fadeInUp ftco-animated blog-single rtl">
+        <h2 class="mb-3">
+          <span>سفارشات شما</span>
+        </h2>
+
+        <div class="table-container mt-5">
+          <table mat-table [dataSource]="dataSource">
+            <!-- Position Column -->
+            <ng-container matColumnDef="position">
+              <th mat-header-cell *matHeaderCellDef>شناسه</th>
+              <td mat-cell *matCellDef="let element">{{ element.position }}</td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef>نام</th>
+              <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="weight">
+              <th mat-header-cell *matHeaderCellDef>وزن</th>
+              <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="symbol">
+              <th mat-header-cell *matHeaderCellDef>سیمبل</th>
+              <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

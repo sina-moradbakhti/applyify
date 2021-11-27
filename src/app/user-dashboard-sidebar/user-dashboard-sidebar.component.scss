@@ -1,0 +1,26 @@
+i.lnr {
+    font-size: var(--font-size-icon);
+}
+
+.categories {
+    li {
+        position: relative;
+        border-bottom: none;
+        list-style: none;
+        background-color: rgb(245, 245, 245);
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        &.active {
+            background-color: var(--myColor);
+            a {
+              color: white;
+              font-weight: 600;
+              font-style: normal;
+            }
+        }
+        a {
+            padding: 12.5px;
+        }
+    }
+}

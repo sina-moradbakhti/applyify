@@ -2717,7 +2717,7 @@ button::-moz-focus-inner {
     top: 0;
     right: 0;
     color: #ccc;
-    font-size: 12px;
+    font-size: var(--font-size-small);
     line-height: 18px;
     white-space: nowrap;
 }
@@ -2820,7 +2820,7 @@ img.mfp-img {
 .mfp-figure small {
     color: #bdbdbd;
     display: block;
-    font-size: 12px;
+    font-size: var(--font-size-small);
     line-height: 14px;
 }
 
@@ -2948,6 +2948,12 @@ img.mfp-img {
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    --font-size-small: 11.5px;
+    --font-size-regular: 13.5px;
+    --font-size-medium: 15.5px;
+    --font-size-icon: 18px;
+    --font-size-large: 20px;
 }
 
 *,
@@ -3422,7 +3428,8 @@ pre code {
 .col-lg-3,
 .col-lg-4,
 .col-lg-6,
-.col-lg-8 {
+.col-lg-8,
+.col-lg-9 {
     position: relative;
     width: 100%;
     padding-right: 15px;
@@ -3542,6 +3549,13 @@ pre code {
         flex: 0 0 66.66667%;
         max-width: 66.66667%;
     }
+
+    .col-lg-9 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%;
+  }
 }
 
 .table {
@@ -5098,7 +5112,7 @@ button.bg-dark:focus {
 body {
     font-family: "IranSans", "Nunito Sans", Arial, sans-serif;
     background: #fff;
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     line-height: 1.8;
     font-weight: 100;
     color: #999;
@@ -5176,7 +5190,7 @@ h5,
 }
 
 .ftco-navbar-light .navbar-nav>.nav-item>.nav-link {
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 25px;
@@ -5239,7 +5253,7 @@ h5,
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     letter-spacing: 0.1em;
 }
 
@@ -5252,7 +5266,7 @@ h5,
 
 .navbar-brand {
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--font-size-large);
     text-transform: uppercase;
     letter-spacing: 2px;
     z-index: 3;
@@ -5276,7 +5290,7 @@ h5,
 
 .navbar-brand span small {
     display: block;
-    font-size: 12px;
+    font-size: var(--font-size-small);
     color: var(--myColor);
     font-weight: 700;
     letter-spacing: 0;
@@ -5340,7 +5354,7 @@ h5,
 }
 
 .hero-wrap .slider-text .breadcrumbs {
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     margin-bottom: 20px;
     z-index: 99;
     font-weight: 600;
@@ -5354,7 +5368,7 @@ h5,
 
 .hero-wrap .slider-text .breadcrumbs span i {
     color: rgba(255, 255, 255, 0.8);
-    font-size: 12px;
+    font-size: var(--font-size-small);
 }
 
 .hero-wrap .slider-text .breadcrumbs span a {
@@ -5394,7 +5408,7 @@ h5,
     -webkit-box-shadow: 0 24px 36px -11px rgba(0, 0, 0, 0.09);
     -moz-box-shadow: 0 24px 36px -11px rgba(0, 0, 0, 0.09);
     box-shadow: 0 24px 36px -11px rgba(0, 0, 0, 0.09);
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     font-weight: 400;
 }
 
@@ -5500,8 +5514,8 @@ h5,
 }
 
 .services .media-body h3 {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: var(--font-size-medium);
+    font-weight: 400;
     color: #000;
     letter-spacing: 2px;
 }
@@ -5509,11 +5523,13 @@ h5,
 .services .media-body p {
     margin-bottom: 0;
     letter-spacing: 0;
-    font-size: 11.5px;
+    font-size: var(--font-size-small);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .services.services-4 h3 {
-    font-size: 16px;
+    font-size: var(--font-size-medium);
     letter-spacing: 0;
 }
 
@@ -5570,7 +5586,7 @@ h5,
     height: 45px;
     background: #fff;
     color: rgba(0, 0, 0, 0.8);
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     border-radius: 2px;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -5634,7 +5650,7 @@ textarea.form-control {
 }
 
 .progress-wrap h3 {
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     margin-bottom: 5px;
     font-weight: 700;
 }
@@ -5651,7 +5667,7 @@ textarea.form-control {
     background: var(--myColor);
     -webkit-box-shadow: none;
     box-shadow: none;
-    font-size: 12px;
+    font-size: var(--font-size-regular);
     line-height: 1.2;
     color: #000;
     font-weight: 600;
@@ -5682,7 +5698,7 @@ textarea.form-control {
     position: absolute;
     top: -25px;
     left: 0;
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     font-weight: 700;
     color: #000;
 }
@@ -5802,7 +5818,7 @@ textarea.form-control {
 }
 
 .staff .text .position {
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     color: var(--myColor);
     display: block;
     font-weight: 600;
@@ -5832,7 +5848,7 @@ textarea.form-control {
 }
 
 .about-author .desc h3 {
-    font-size: 20px;
+    font-size: var(--font-size-large);
     font-weight: 600;
 }
 
@@ -5857,7 +5873,7 @@ textarea.form-control {
 }
 
 .ftco-footer {
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     padding: 6em 0 0 0;
     color: rgba(0, 0, 0, 0.9);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -5905,7 +5921,7 @@ textarea.form-control {
 }
 
 .ftco-footer .ftco-heading-2 {
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     font-weight: 700;
     color: #000;
 }
@@ -6144,7 +6160,7 @@ textarea.form-control {
 
 .testimony-section .block-18 .text span {
     display: block;
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     color: var(--myColor);
     line-height: 1.2;
     text-transform: uppercase;
@@ -6217,7 +6233,7 @@ textarea.form-control {
 }
 
 .testimony-wrap .position {
-    font-size: 12px;
+    font-size: var(--font-size-regular);
     color: #ccc;
     color: #fff;
     text-transform: uppercase;
@@ -6394,7 +6410,7 @@ textarea.form-control {
 }
 
 .blog-entry .text .heading {
-    font-size: 20px;
+    font-size: var(--font-size-large);
     margin-bottom: 16px;
     font-weight: 600;
 }
@@ -6426,7 +6442,7 @@ textarea.form-control {
     display: inline-block;
     margin-right: 5px;
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: var(--font-size-regular);
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -6498,14 +6514,14 @@ textarea.form-control {
 }
 
 .wrapper .social-media h3 {
-    font-size: 18px;
+    font-size: var(--font-size-medium);
     font-weight: 700;
 }
 
 .wrapper .social-media p a {
     color: #000;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     font-weight: 100;
     margin-right: 10px;
 }
@@ -6548,7 +6564,7 @@ textarea.form-control {
     color: #000;
     display: block;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     font-weight: 700;
 }
 
@@ -6563,7 +6579,7 @@ textarea.form-control {
 .contactForm .label {
     color: var(--myColor);
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: var(--font-size-regular);
     font-weight: 300;
 }
 
@@ -6601,7 +6617,7 @@ textarea.form-control {
 
 .block-21 .text .meta>div {
     display: inline-block;
-    font-size: 12px;
+    font-size: var(--font-size-regular);
     margin-right: 5px;
 }
 
@@ -6618,7 +6634,7 @@ textarea.form-control {
     margin-right: 4px;
     border-radius: 4px;
     color: #fff;
-    font-size: 11px;
+    font-size: var(--font-size-small);
     background: var(--myColor);
 }
 
@@ -6631,7 +6647,7 @@ textarea.form-control {
 }
 
 .comment-form-wrap .form-group label {
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     text-transform: uppercase;
     color: #000;
     font-weight: 700;
@@ -6641,7 +6657,7 @@ textarea.form-control {
     height: 45px;
     background: transparent;
     color: rgba(0, 0, 0, 0.8);
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     border-radius: 2px;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
@@ -6716,7 +6732,7 @@ textarea.form-control {
 
 .comment-list li .comment-body .meta {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: var(--font-size-regular);
     letter-spacing: 0.1em;
     color: #ccc;
     font-weight: 300;
@@ -6730,7 +6746,7 @@ textarea.form-control {
     background: #e6e6e6;
     color: #fff;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: var(--font-size-small);
     letter-spacing: 0.1em;
     font-weight: 300;
     border-radius: 4px;
@@ -6748,7 +6764,7 @@ textarea.form-control {
 
 .search-form .form-group input {
     padding-right: 50px;
-    font-size: 14px;
+    font-size: var(--font-size-regular);
     border: none;
 }
 
@@ -6773,9 +6789,9 @@ textarea.form-control {
 }
 
 .sidebar-box h3 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .categories li {
@@ -6795,6 +6811,9 @@ textarea.form-control {
 .categories li a {
     display: block;
     color: #1a1a1a;
+    font-size: var(--font-size-regular);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .categories li a span {

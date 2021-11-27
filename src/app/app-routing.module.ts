@@ -6,6 +6,10 @@ import { CategoryDetailComponent } from './category-detail/category-detail.compo
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { UserMessagesComponent } from './user-messages/user-messages.component';
+import { UserOrdersComponent } from './user-orders/user-orders.component';
+import { UserPaysComponent } from './user-pays/user-pays.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +19,10 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'blog', component: BlogComponent },
+  { path: 'user/dashboard', component: UserDashboardComponent },
+  { path: 'user/pays', component: UserPaysComponent },
+  { path: 'user/messages', component: UserMessagesComponent },
+  { path: 'user/orders', component: UserOrdersComponent },
 ];
 
 @NgModule({

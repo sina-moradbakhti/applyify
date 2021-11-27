@@ -1,0 +1,16 @@
+.blog-single {
+    h2 {
+        font-weight: 600;
+        letter-spacing: 0;
+        font-size: var(--font-size-large);
+        span:nth-child(1){
+          color: var(--myColor);
+        }
+    }
+
+    p {
+      color: black;
+      font-weight: 300;
+      line-height: 28px;
+    }
+}
